@@ -13,6 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:wght@300&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
     <!-- Bootstrap icons -->
     <link
       rel="stylesheet"
@@ -137,22 +138,26 @@
           <p class="text">UNIEURO</p>
         </div>
       </div>
-        <section>
-          <div class="container">
-            <button class="arrow-left control" aria-label="Previous image">◀</button>
-            <button class="arrow-right control" aria-label="Next Image">▶</button>
-            <div class="gallery-wrapper">
-              <div class="gallery">
-                <!--       <div class="item current-item cyan"></div>
-                <div class="item deeppink"></div>
-                <div class="item turquoise"></div>
-                <div class="item darkblue"></div>
-                <div class="item purple"></div> -->
-                <img src="https://source.unsplash.com/random/250x250/?beach" alt="Beach Image" class="item current-item">
-                <img src="https://source.unsplash.com/random/250x250/?animal" alt="Animal Image" class="item current-item">
-                <img src="https://source.unsplash.com/random/250x250/?street" alt="Street Image" class="item current-item">
-                <img src="https://source.unsplash.com/random/250x250/?zoo" alt="Zoo Image" class="item current-item">
-                <img src="https://source.unsplash.com/random/250x250/?model" alt="Model Image" class="item current-item">
+      <section id="section-slide">
+        <div class="container">
+            <div class="slider-wrapper">
+              <button id="prev-slide" class="slide-button material-symbols-rounded">
+                chevron_left
+              </button>
+              <ul class="image-list">
+                <img class="image-item" src="img/guarda.jpg" alt="img-1" />
+                <img class="image-item" src="img/divorcio.jpg" alt="img-2" />
+                <img class="image-item" src="img/pensao.jpg" alt="img-3" />
+                <img class="image-item" src="img/unnamed.jpg" alt="img-4" />
+                <img class="image-item" src="img/19957e74c5f336694bffa53a6e2188ac.jpg" alt="img-5" />
+              </ul>
+              <button id="next-slide" class="slide-button material-symbols-rounded">
+                chevron_right
+              </button>
+            </div>
+            <div class="slider-scrollbar">
+              <div class="scrollbar-track">
+                <div class="scrollbar-thumb"></div>
               </div>
             </div>
           </div>
