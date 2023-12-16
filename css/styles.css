@@ -161,12 +161,20 @@ i {
 }
 
 .image-container {
-  flex: 1 1 120px;
+  flex: 1 1 50px;
   position: relative;
+  overflow: hidden; /* Oculta as partes da imagem fora do contêiner */
+  width: 50px; /* Adapte este valor conforme necessário */
+  height: 500px; /* Adapte este valor conforme necessário */
 }
 
-.image-container i {
-  position: absolute;
+.image-container img {
+  width: 90%; /* Garante que a imagem preencha o contêiner */
+  height: 160%; /* Garante que a imagem preencha o contêiner */
+  object-fit: cover; /* Ajusta a posição e dimensiona a imagem para cobrir completamente o contêiner */
+  position: absolute; /* Permite posicionar a imagem dentro do contêiner */
+  top: 0; /* Alinha a parte superior da imagem com a parte superior do contêiner */
+  left: 0; /* Move a imagem para a direita (ajuste conforme necessário) */
 }
 
 
