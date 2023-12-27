@@ -195,3 +195,10 @@ const initSlider = () => {
 
 window.addEventListener("resize", initSlider);
 window.addEventListener("load", initSlider);
+
+/* flipcard */
+
+function toggleFlip(element) {
+  // Adiciona a classe 'flipped' ao elemento pai (.image-item-container)
+  element.classList.toggle('flipped');
+}
