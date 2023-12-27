@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aquiles Advocacia</title>
       <!-- Meta tags para SEO -->
-    <meta name="description" content="Vivian Aquiles é expert em Direito de Família e Sucessões.
+    <meta name="description" content="Vivian Aquiles.
     " />
     <meta name="keywords" content="Águas Lindas, Santo António, Aquiles, Vivian, Vivian Aquiles, Aquiles Advocacia, Vivian Aquiles Advogada, Advogada, Direito da Familia, Divorcio, Sucessões " />
     <meta name="author" content="vivian Aquiles" />
@@ -26,7 +26,7 @@
     <meta name="twitter:description" content="Descrição do seu site para o Twitter" />
     <meta name="twitter:image" content="URL da imagem a ser exibida" />
 
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="img/minilogo.jpg"/>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -40,6 +40,9 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
     />
+    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+    
+
     <!-- Estilos -->
     <link rel="stylesheet" href="css/styles.css" />
     <!-- Scripts -->
@@ -52,20 +55,18 @@
         <h2 id="brand">Aquiles Advocacia</h2>
         <nav id="navbar">
           <a href="#header">Início</a>
-          <a href="#expertise-areas">Serviços</a>
+          <a href="#section-slide">Serviços</a>
           <a href="#about">Sobre</a>
-          <a href="#team">Time</a>
-          <a href="#contact">Contato</a>
+          <a href="#section-faq">Faq</a>
         </nav>
         <!-- Menu Mobile -->
         <i class="bi bi-list" id="menu"></i>
         <nav id="mobile-navbar">
           <i class="bi bi-x-lg" id="close-menu"></i>
           <a href="#header">Início</a>
-          <a href="#expertise-areas">Serviços</a>
+          <a href="#section-slide">Serviços</a>
           <a href="#about">Sobre</a>
-          <a href="#team">Time</a>
-          <a href="#contact">Contato</a>
+          <a href="#section-faq">Faq</a>
         </nav>
       </div>
       <div class="banner active">
@@ -73,16 +74,10 @@
         <h2>Experts em direito</h2>
         <br>
         <br>
-        <p>
-          Testemunhe resultados concretos
-        </p>
       </div>
       <div class="banner">
         <span class="square"></span>
         <h2>Comprometimento com a Justiça</h2>
-        <p>
-          Veja as nossas especialidades
-        </p>
       </div>
       <div class="banner">
         <span class="square"></span>
@@ -100,7 +95,7 @@
       <div id="expertise-information" class="text-container">
         <p class="section-subtitle">Sobre</p>
         <h3 class="section-title">
-          Expert em Direito de Família e Sucessões.
+          Escritório de Advocacia Especializado em Direito de Família e Sucessões atuante em todo o Brasil
         </h3>
         <a href="#other-services" class="btn">Saiba Mais</a>
       </div>
@@ -164,52 +159,135 @@
             <button id="prev-slide" class="slide-button material-symbols-rounded">
               chevron_left
             </button>
-            <ul class="image-list">
+            <ul class="image-list">  
               <li>
-                <div class="image-item-container" onclick="toggleFlip(this)">
-                  <div class="flip-card">
-                    <div class="card-side card-front">
-                      <img class="image-item" src="img/guarda.jpg" alt="img-1" />
+                <div class="card">
+                  <div class="card__inner">
+                    <div class="card__face card__face--front">
+                      <img class="image-item" src="img/pensao.jpeg" alt="img-1" />
+                      <h2 class="image-title">Pensão Alimentícia</h2>
                     </div>
-                    <div class="card-side card-back">
-                      <div class="back-text-container">
-                        <p>vai sabrinda</p>
+                    <div class="card__face card__face--back">
+                      <div class="card__content">
+                        <div class="card__header">
+                          <h2>Pensão Alimentícia</h2>
+                        </div>
+                        <div class="card__body">
+                          <p>
+                            A pensão alimentícia não inclui somente a alimentação, pelo contrário, abrange a educação, transporte, lazer, roupas, calçados, moradia, saúde e todas as necessidades que o filho tiver, devendo ser paga por aquele que não detiver a guarda.
+                            Não existe um valor mínimo estipulada para a obrigação alimentar, esse valor será fixado com base nas necessidades do menor e nas possibilidades dos pais.
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <h2 class="image-title">Guarda e Convivência</h2>
                 </div>
-              </li>                     
+              </li> 
               <li>
-                <div class="image-item-container" onclick="toggleFlip(this)">
-                  <img class="image-item" src="img/divorcio.jpg" alt="img-2" />
-                  <h2 class="image-title">Divórcio</h2>
+                <div class="card">
+                  <div class="card__inner">
+                    <div class="card__face card__face--front">
+                      <img class="image-item" src="img/divorcio.jpg"alt="img-2" />
+                      <h2 class="image-title">Divórcio
+                      </h2>
+                    </div>
+                    <div class="card__face card__face--back">
+                      <div class="card__content">
+                        <div class="card__header">
+                          <h2>Divórcio</h2>
+                        </div>
+                        <div class="card__body">
+                          <p>Lorem ipsum <strong>dolor</strong> sit amet, consectetur <strong>adipiscing</strong> elit. Sed id erat a magna lobortis dictum. Nunc est arcu, <strong>lacinia</strong> quis sapien placerat, <strong>laoreet</strong> tincidunt nulla.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </li>
+              </li> 
               <li>
-                <div class="image-item-container" onclick="toggleFlip(this)">
-                  <img class="image-item" src="img/pensao.jpg" alt="img-3" />
-                  <h2 class="image-title">Pensão Alimentícia</h2>
+                <div class="card">
+                  <div class="card__inner">
+                    <div class="card__face card__face--front">
+                      <img class="image-item" src="img/guarda.jpg"alt="img-2" />
+                      <h2 class="image-title">Guarda e convivência
+                      </h2>
+                    </div>
+                    <div class="card__face card__face--back">
+                      <div class="card__content">
+                        <div class="card__header">
+                          <h2>Guarda e convivência</h2>
+                        </div>
+                        <div class="card__body">
+                          <p>Lorem ipsum <strong>dolor</strong> sit amet, consectetur <strong>adipiscing</strong> elit. Sed id erat a magna lobortis dictum. Nunc est arcu, <strong>lacinia</strong> quis sapien placerat, <strong>laoreet</strong> tincidunt nulla.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </li>
+              </li>          
               <li>
-                <div class="image-item-container" onclick="toggleFlip(this)">
-                  <img class="image-item" src="img/19957e74c5f336694bffa53a6e2188ac.jpg" alt="img-5" />
-                  <h2 class="image-title">Inventário</h2>
+                <div class="card">
+                  <div class="card__inner">
+                    <div class="card__face card__face--front">
+                      <img class="image-item" src="img/uniao.jpeg"alt="img-2" />
+                      <h2 class="image-title">União estável
+                      </h2>
+                    </div>
+                    <div class="card__face card__face--back">
+                      <div class="card__content">
+                        <div class="card__header">
+                          <h2>União estável</h2>
+                        </div>
+                        <div class="card__body">
+                          <p>Lorem ipsum <strong>dolor</strong> sit amet, consectetur <strong>adipiscing</strong> elit. Sed id erat a magna lobortis dictum. Nunc est arcu, <strong>lacinia</strong> quis sapien placerat, <strong>laoreet</strong> tincidunt nulla.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </li>
+              </li>        
               <li>
-                <div class="image-item-container" onclick="toggleFlip(this)">
-                  <img class="image-item" src="img/19957e74c5f336694bffa53a6e2188ac.jpg" alt="img-5" />
-                  <h2 class="image-title">Reconhecimento e dissolução de união estável</h2>
+                <div class="card">
+                  <div class="card__inner">
+                    <div class="card__face card__face--front">
+                      <img class="image-item" src="img/iventario.jpeg"alt="img-2" />
+                      <h2 class="image-title">Inventário
+                      </h2>
+                    </div>
+                    <div class="card__face card__face--back">
+                      <div class="card__content">
+                        <div class="card__header">
+                          <h2>Inventário</h2>
+                        </div>
+                        <div class="card__body">
+                          <p>Lorem ipsum <strong>dolor</strong> sit amet, consectetur <strong>adipiscing</strong> elit. Sed id erat a magna lobortis dictum. Nunc est arcu, <strong>lacinia</strong> quis sapien placerat, <strong>laoreet</strong> tincidunt nulla.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </li>
+              </li>     
               <li>
-                <div class="image-item-container" onclick="toggleFlip(this)">
-                  <img class="image-item" src="img/19957e74c5f336694bffa53a6e2188ac.jpg" alt="img-5" />
-                  <h2 class="image-title">Planejamento Sucessório</h2>
+                <div class="card">
+                  <div class="card__inner">
+                    <div class="card__face card__face--front">
+                      <img class="image-item" src="img/planejamento.jpeg"alt="img-2" />
+                      <h2 class="image-title">Planejamento sucessório
+                      </h2>
+                    </div>
+                    <div class="card__face card__face--back">
+                      <div class="card__content">
+                        <div class="card__header">
+                          <h2>Planejamento sucessório</h2>
+                        </div>
+                        <div class="card__body">
+                          <p>Lorem ipsum <strong>dolor</strong> sit amet, consectetur <strong>adipiscing</strong> elit. Sed id erat a magna lobortis dictum. Nunc est arcu, <strong>lacinia</strong> quis sapien placerat, <strong>laoreet</strong> tincidunt nulla.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </li>
+              </li>                                                        
             </ul>
             <button id="next-slide" class="slide-button material-symbols-rounded">
               chevron_right
@@ -256,7 +334,7 @@
       </div>
       <div class="faq">
         <div class="question">
-          <h3>Você sabe java?</h3>
+          <h3>Quem não tem a guarda perde o direito de participar da vida da criança?</h3>
 
           <svg width="15" height="10" viewBox="0 0 42 25">
             <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="roud"/>
@@ -264,7 +342,7 @@
         </div>
         <div class="answer">
           <p>
-            Java é bom hahahahahhahha vai Botafogo
+            Não! A guarda unilateral não significa a perda do dever/direito, do pai que não detiver a guarda, de participar, supervisionar ou intervir na vida da criança. 
           </p>
         </div>
       </div>
@@ -283,15 +361,11 @@
         </div>
       </div>
     </section>
-
+<br>
+<br>
     </section>
     <footer id="footer">
       <div class="contact-info">
-        <div class="footer-brand">
-        </div>
-        <p><i class="bi bi-geo-alt"></i>Rua dos Advogados, 1415</p>
-        <p><i class="bi bi-telephone"></i>(99) 9999-9999</p>
-        <p><i class="bi bi-envelope"></i>contato@pearsonhardman.com</p>
         <div class="social-networks">
           <p>Siga-nos:</p>
           <div class="networks">
@@ -302,33 +376,13 @@
           </div>
         </div>
       </div>
-      <div class="links-container">
-        <h4>Outros serviços</h4>
-        <nav>
-          <a href="#">Propriedade intelectual</a>
-          <a href="#">LGPD</a>
-          <a href="#">Direito internacional</a>
-          <a href="#">Processos</a>
-        </nav>
+      <div class="whatsapp-isolated-container">
+        <!-- Seu código HTML do botão do WhatsApp aqui -->
+        <a class="whatsapp-link" href="https://wa.me/556198489615" target="_blank">
+          <i class="fab fa-whatsapp"></i>
+        </a>
       </div>
-      <div class="links-container">
-        <h4>Páginas</h4>
-        <nav>
-          <a href="#">Termos e condições</a>
-          <a href="#">Política de privacidade</a>
-          <a href="#">Fale com um especialista</a>
-          <a href="#">FAQ</a>
-        </nav>
-      </div>
-      <div class="links-container">
-        <div class="phone-number">
-          <i class="bi bi-telephone"></i>
-          <p>(99) 9999-9999</p>
-        </div>
-        <p class="phone-info">
-          Este telefone é especial para tratar de casos já em andamento
-        </p>
-      </div>
+      
     </footer>
   </body>
 </html>

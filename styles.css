@@ -47,6 +47,7 @@ i {
 }
 
 
+
 #inner-header {
   display: flex;/* Faz com que ative o recurso de flex-box podendo posicionar os elementos de uma forma mais simples */
   justify-content: space-between;
@@ -125,7 +126,7 @@ i {
 /* Áreas de atuação */
 .text-image-section {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* Se a largura exceder o limite da tela uma passa para debaixo da outra */
   gap: 2rem;
 }
 
@@ -176,62 +177,9 @@ i {
   left: 0; /* Move a imagem para a direita (ajuste conforme necessário) */
 }
 
-/* Adicionando regras de mídia para tornar o design mais responsivo */
-/* Estilos para a versão mobile */
-@media only screen and (max-width: 1023px) {
-  .image-container img {
-    width: 100%;
-    height: 100%;
-  }
-}
-
-  .image-container img {
-    width: 100%; /* Garante que a imagem preencha a largura do contêiner em telas menores */
-    height: 140%; /* Garante que a imagem preencha a altura do contêiner em telas menores */
-    object-fit: cover; /* Ajusta a posição e dimensiona a imagem para cobrir completamente o contêiner */
-    top: 60%; /* Alinha o centro vertical da imagem com o centro vertical do contêiner */
-    left: 50%; /* Alinha o centro horizontal da imagem com o centro horizontal do contêiner */
-    transform: translate(-50%, -50%); /* Centraliza a imagem usando transform */
-    position: absolute; /* Permite posicionar a imagem dentro do contêiner */
-  }
-
-
-#other-services {
-  width: 100%;
-  display: flex;
-  gap: 2rem;
-  padding: 2rem;
-}
-
-.service {
-  position: relative;
-}
-
-.service i {
-  position: absolute;
-  left: 0;
-  top: 0;
-  padding: 1rem;
-  font-size: 1.5rem;
-}
-
-.service-info {
-  background-color: var(--tertiary-color);
-  padding: 2rem 1.4rem;
-  min-height: 250px;
-  margin-top: -3rem;
-  z-index: 2;
-  position: relative;
-}
-
-.service h4 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-  text-transform: uppercase;
-}
 
 /* Sobre nós */
-#about {
+#about{
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -239,7 +187,7 @@ i {
 }
 
 #about-text {
-  background-image: url("../img/pattern.png");
+  background-image: url("../img/pattern.png"); 
   background-size: cover;
   background-position: center;
   color: var(--primary-text-color);
@@ -247,9 +195,10 @@ i {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 2rem;
+  gap:2rem;
   padding: 4rem 3rem;
 }
+
 
 #about-text .section-subtitle,
 #about-text .section-title {
@@ -314,74 +263,6 @@ i {
   text-transform: uppercase;
 }
 
-/* Depoimentos */
-#testimonials {
-  display: flex;
-  align-items: center;
-}
-
-#testimonial-information {
-  padding: 3rem;
-}
-
-.autor {
-  display: flex;
-  justify-content: end;
-  align-items: center;
-  gap: 1rem;
-}
-
-.author .author-name {
-  color: var(--main-color);
-  text-transform: uppercase;
-  font-size: 1.3rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
-
-.author .author-job {
-  color: var(--secondary-text-color);
-}
-
-.author img {
-  width: 100px;
-  height: 100px;
-}
-
-/* Colaboradores */
-#team {
-  position: relative;
-  margin-bottom: 2rem;
-}
-
-#team h2 {
-  font-size: 3rem;
-  text-align: center;
-  max-width: 1000px;
-  margin: 0 auto;
-  position: relative;
-  z-index: 2;
-}
-
-#team h2 span {
-  color: var(--main-color);
-}
-
-#team .square {
-  background-color: var(--tertiary-color);
-  width: 100px;
-  height: 100px;
-  left: 50%;
-  margin-left: -50px;
-  top: -25px;
-}
-
-.employees {
-  display: flex;
-  gap: 2rem;
-  padding: 2rem;
-  text-align: center;
-}
 
 .employee-name {
   color: var(--main-color);
@@ -389,62 +270,6 @@ i {
   font-size: 1.2rem;
   font-weight: bold;
   margin: 0.5rem 0;
-}
-
-/* Contato */
-#contact {
-  background-color: var(--main-color);
-  gap: 0;
-  padding-bottom: 5rem;
-}
-
-#contact-information {
-  position: relative;
-  text-align: left;
-  padding: 3rem;
-  flex: 1 1 0;
-}
-
-#contact-information .section-subtitle {
-  color: var(--primary-text-color);
-}
-
-#contact-information i {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: var(--primary-text-color);
-  color: var(--main-color);
-}
-
-#contact-information form {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-#contact-information .form-control {
-  display: flex;
-  gap: 1rem;
-}
-
-#contact-information input,
-#contact-information textarea {
-  flex: 0.5;
-  padding: 1rem;
-  border: none;
-}
-
-#contact-information .btn {
-  align-self: start;
-  border: 2px solid var(--primary-text-color);
-  font-size: 1.2rem;
-  transition: 0.4s;
-}
-
-#contact-information .btn:hover {
-  background-color: var(--primary-text-color);
-  color: var(--main-color);
 }
 
 /* Rodapé */
@@ -467,7 +292,7 @@ i {
 
 .contact-info,
 .links-container {
-  width: 20%;
+  width: 40%;
 }
 
 .footer-brand {
@@ -523,6 +348,11 @@ i {
 .phone-number {
   display: flex;
   border: 1px solid var(--main-color);
+}
+
+.phone-number {
+  display: flex;
+  border: 1px solid var(--main-color);
   gap: 1rem;
   align-items: center;
   margin-bottom: 1rem;
@@ -533,8 +363,7 @@ i {
 }
 
 /* Mobile navbar */
-#menu,
-#close-menu {
+#menu, #close-menu  {
   font-size: 2rem;
   padding: 1rem;
   display: none;
@@ -544,6 +373,7 @@ i {
   position: absolute;
   top: 0;
   right: 0;
+  display: none;
 }
 
 #mobile-navbar {
@@ -574,146 +404,129 @@ i {
 }
 
 /* Responsivo */
-@media (max-width: 450px) {
-  /* Geral */
-  body {
-    overflow-x: hidden;
-  }
+/* Significa que as regras que estão aqui irão funcionar para dispositivos com a tela abaixo de 450px */
 
-  i {
-    padding: 1.5rem;
-    font-size: 2rem;
-  }
+@media (max-width: 450px){
+ /* Geral */
+ body {
+  overflow-x: hidden; /*Tudo que passar da tela não será contabilizado*/
+ }
 
-  /* navbar */
-  #navbar {
-    display: none;
-  }
+ i {
+  padding: 1.5rem;
+  font-size: 2rem;
+ }
 
-  #menu,
-  #close-menu {
-    display: block;
-  }
+ /* Navbar */
+ #navbar {
+  display: none;
+ }
 
-  .banner {
-    max-width: 100%;
-    padding: 4rem 2rem;
-  }
+ #menu,
+ #close-menu {
+  display: block;
+ }
 
-  .banner h2 {
-    font-size: 3rem;
-  }
+ .banner {
+  max-width: 100%;
+  padding: 4rem 2rem;
+ }
 
-  .banner p {
-    font-size: 1rem;
-  }
+ .banner h2 {
+  font-size: 3rem;
+ }
 
-  /* Áreas de atuação */
-  .btn {
-    align-self: initial;
-  }
+ .banner p {
+  font-size: 1rem;
+ }
 
-  .image-container {
-    flex: 1 1 100%;
-  }
+ /* Áreas de atuação */
+ .btn {
+  align-self: initial;
+ }
 
-  #other-services {
-    flex-wrap: wrap;
-  }
+ .image-container {
+  flex: 1 1 100%;
+ }
 
-  /* Sobre nós */
-  #about {
-    gap: 0;
-  }
+ #other-services {
+  flex-wrap: wrap;
+ }
 
-  #about-text,
-  #about-data {
-    flex: 1 1 100%;
-  }
+ /* Sobre nós */
+ #about {
+  gap: 0;
+ }
 
-  .about-description {
-    gap: 1rem;
-  }
+ #about-text,
+ #about-data {
+  flex: 1 1 100%;
+ }
 
-  .about-description i {
-    padding: 0;
-    min-width: 40px;
-  }
+ .about-description {
+  gap: 1rem;
+ }
 
-  #about #about-data .data {
-    width: 100%;
-    border: none;
-    border-bottom: 1px solid var(--secondary-text-color);
-  }
+ .about-description i {
+  padding: 0;
+  min-width: 40px;
+ }
 
-  /* Depoimentos */
-  .text-container {
-    text-align: center;
-    padding: 2rem;
-  }
+ #about #about-data .data {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid var(--main-color);
+ }
 
-  /* Colaboradores */
-  #team {
-    margin-top: 2rem;
-  }
+ /* Contato */
+ #contact {
+  padding-bottom: 0;
+ }
 
-  #team h2 {
-    font-size: 2.5rem;
-  }
+ #contact-information {
+  padding: 7rem 1rem;
+ }
 
-  .employees {
-    flex-wrap: wrap;
-  }
+ #contact-information .form-control {
+  flex-direction: column;
+ }
 
-  /* Contato */
-  #contact {
-    padding-bottom: 0;
-  }
+ #contact-information .btn {
+  align-self: auto;
+ }
 
-  #contact-information {
-    padding: 7rem 1rem;
-  }
+ /* Rodapé */
+ #footer {
+  flex-wrap: wrap;
+ }
 
-  #contact-information .form-control {
-    flex-direction: column;
-  }
+ #footer i {
+  font-size: 2rem;
+  padding: 1rem;
+ }
 
-  #contact-information .btn {
-    align-self: auto;
-  }
+ .footer-brand {
+  text-align: center;
+ }
 
-  /* Rodapé */
-  #footer {
-    flex-wrap: wrap;
-  }
-
-  #footer i {
-    font-size: 2rem;
-    padding: 1rem;
-  }
-
-  .footer-brand {
-    text-align: center;
-  }
-
-  .networks {
-    margin-bottom: 3rem;
-  }
-
-  .links-container {
-    margin-bottom: 1rem;
-  }
-
-  .links-container h4 {
-    margin-bottom: 1.5rem;
-  }
-
-  .contact-info,
-  .links-container {
-    width: 100%;
-  }
+.networks {
+  margin-bottom: 3rem;
 }
 
+.links-container {
+  margin-bottom: 1rem;
+}
+
+.links-container h4 {
+  margin-bottom: 1.5rem;
+}
+
+ .contact-info,
+ .links-container {
+  width: 100%;
+ }
+
+}
 #section-faq{
   min-height: 100vh;
   width: 80%;
@@ -759,33 +572,22 @@ max-height:300px;
 animation: fade 1s ease-in-out;
 }
 .faq.active svg{
-  transform: rotate(190deg) scale(1.5); /* Ajuste o valor da escala conforme necessário */
+  transform: rotate(190deg);
 }
 svg{
   transition: transform .5s ease-in;
 }
 
-/* Adicione regras de mídia para dispositivos móveis */
-@media only screen and (max-width: 1023px) {
-  .faq.active svg {
-    width: 15px; /* Ajuste o valor conforme necessário */
-    height: 10px; /* Ajuste o valor conforme necessário */
-    transform: rotate(190deg); /* Mantenha a rotação se necessário */
-  }
-}
-
-
 @keyframes fade {
-  from {
+  from{
     opacity: 0;
     transform: translateY(-10px);
   }
-  to {
+  to{
     opacity: 1;
     transform: translateY(0);
   }
 }
-
 
 
 /* SLIDE */
@@ -909,7 +711,27 @@ svg{
   bottom: -10px;
 }
 
+/* Styles for mobile and tablets */
+@media only screen and (max-width: 1023px) {
+  .slider-wrapper .slide-button {
+    display: none !important;
+  }
 
+  .slider-wrapper .image-list {
+    gap: 10px;
+    margin-bottom: 15px;
+    scroll-snap-type: x mandatory;
+  }
+
+  .slider-wrapper .image-list .image-item {
+    width: 280px;
+    height: 380px;
+  }
+
+  .slider-scrollbar .scrollbar-thumb {
+    width: 20%;
+  }
+}
 /* Perfumarias */
 .image-item-container {
   position: relative;
@@ -1026,15 +848,15 @@ svg{
 /* Estilo específico para o link do WhatsApp */
 .whatsapp-link {
   position: fixed;
-  width: 70px;
-  height: 70px;
-  bottom: 50px;
-  right: 50px;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
   background-color: #25d366;
   color: #fff;
   border-radius: 50%;
   text-align: center;
-  font-size: 30px; /* Tamanho original */
+  font-size: 30px;
   box-shadow: 1px 1px 2px #888;
   z-index: 1000;
   transition: transform 0.2s, box-shadow 0.2s, width 0.2s, height 0.2s;
@@ -1046,21 +868,12 @@ svg{
 .whatsapp-link:hover {
   transform: scale(1.1);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
+}
+
+.fa-whatsapp {
+  margin-top: 0;
 }
 
 
-/* Adicionando regras de mídia para tornar o design mais responsivo */
-
-/* Para telas menores ou iguais a 600px */
-@media only screen and (max-width: 1023px) {
-  /* Outras regras de mídia aqui... */
-
-  /* Reduzindo o zoom em telas menores */
-  body {
-    zoom: 0.8; /* Experimente valores entre 0.8 e 0.5 até encontrar o desejado */
-  }
-}
-
-/* Restante do CSS (não modificado) */

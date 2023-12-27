@@ -198,7 +198,14 @@ window.addEventListener("load", initSlider);
 
 /* flipcard */
 
-function toggleFlip(element) {
-  // Adiciona a classe 'flipped' ao elemento pai (.image-item-container)
-  element.classList.toggle('flipped');
-}
+// Selecione todos os elementos .card__inner
+const cards = document.querySelectorAll(".card__inner");
+
+// Adicione um ouvinte de evento a cada cartão
+cards.forEach(function (card) {
+  card.addEventListener("click", function (e) {
+    card.classList.toggle('is-flipped');
+  });
+});
+
+
